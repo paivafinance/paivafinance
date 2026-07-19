@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 368" width="640" height="368" role="img" aria-label="Profile card: Thiago Paiva, co-founder and dev at Integranos">
+<style>
+text{font-family:ui-monospace,SFMono-Regular,'Cascadia Code',Consolas,Menlo,monospace}
+.l{opacity:0;animation:slide .5s ease-out forwards}
+@keyframes slide{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){.l{animation:none;opacity:1}}
+</style>
+<rect x="0.5" y="0.5" width="639" height="367" rx="12" fill="#0d1117" stroke="#30363d"/>
+<path d="M0.5 34 h639" stroke="#30363d"/>
+<circle cx="24" cy="17" r="6" fill="#ff5f56"/>
+<circle cx="44" cy="17" r="6" fill="#ffbd2e"/>
+<circle cx="64" cy="17" r="6" fill="#27c93f"/>
+<text x="320" y="21" font-size="12" fill="#8b949e" text-anchor="middle">thiago@integranos: ~</text>
+<g class="l" style="animation-delay:0.00s"><text x="28" y="68" font-size="13"><tspan fill="#5CB033" font-weight="bold">thiago</tspan><tspan fill="#8b949e">@</tspan><tspan fill="#5CB033" font-weight="bold">integranos</tspan></text></g>
+<g class="l" style="animation-delay:0.12s"><text x="28" y="90" font-size="13" fill="#8b949e">-----------------</text></g>
+<g class="l" style="animation-delay:0.24s"><text x="28" y="112" font-size="13" fill="#5CB033" font-weight="bold">Role</text><text x="120" y="112" font-size="13" fill="#c9d1d9">Co-founder &amp; Dev @ Integranos</text></g>
+<g class="l" style="animation-delay:0.36s"><text x="28" y="134" font-size="13" fill="#5CB033" font-weight="bold">Also</text><text x="120" y="134" font-size="13" fill="#c9d1d9">CTO @ ArchLab · AI for architecture</text></g>
+<g class="l" style="animation-delay:0.48s"><text x="28" y="156" font-size="13" fill="#5CB033" font-weight="bold">Stack</text><text x="120" y="156" font-size="13" fill="#c9d1d9">Python · FastAPI · Next.js · TypeScript</text></g>
+<g class="l" style="animation-delay:0.60s"><text x="28" y="178" font-size="13" fill="#5CB033" font-weight="bold">Data</text><text x="120" y="178" font-size="13" fill="#c9d1d9">Supabase · PostgreSQL</text></g>
+<g class="l" style="animation-delay:0.72s"><text x="28" y="200" font-size="13" fill="#5CB033" font-weight="bold">AI</text><text x="120" y="200" font-size="13" fill="#c9d1d9">Gemini · Claude · gen-media pipelines</text></g>
+<g class="l" style="animation-delay:0.84s"><text x="28" y="222" font-size="13" fill="#5CB033" font-weight="bold">Infra</text><text x="120" y="222" font-size="13" fill="#c9d1d9">Hetzner VPS · Docker · Easypanel · Cloudflare</text></g>
+<g class="l" style="animation-delay:0.96s"><text x="28" y="244" font-size="13" fill="#5CB033" font-weight="bold">Focus</text><text x="120" y="244" font-size="13" fill="#c9d1d9">B2B process automation &amp; custom software</text></g>
+<g class="l" style="animation-delay:1.08s"><text x="28" y="266" font-size="13" fill="#5CB033" font-weight="bold">Web</text><text x="120" y="266" font-size="13" fill="#c9d1d9">integranos.com.br</text></g>
+<g class="l" style="animation-delay:1.20s"><text x="28" y="288" font-size="13" fill="#5CB033" font-weight="bold">Where</text><text x="120" y="288" font-size="13" fill="#c9d1d9">Brazil · UTC-3</text></g>
+<g class="l" style="animation-delay:1.32s"><rect x="28" y="318" width="22" height="13" rx="2" fill="#21262d"/><rect x="52" y="318" width="22" height="13" rx="2" fill="#f85149"/><rect x="76" y="318" width="22" height="13" rx="2" fill="#3fb950"/><rect x="100" y="318" width="22" height="13" rx="2" fill="#d29922"/><rect x="124" y="318" width="22" height="13" rx="2" fill="#58a6ff"/><rect x="148" y="318" width="22" height="13" rx="2" fill="#bc8cff"/><rect x="172" y="318" width="22" height="13" rx="2" fill="#39c5cf"/><rect x="196" y="318" width="22" height="13" rx="2" fill="#b1bac4"/></g>
+<g class="l" style="animation-delay:1.44s"><rect x="28" y="334" width="22" height="13" rx="2" fill="#30363d"/><rect x="52" y="334" width="22" height="13" rx="2" fill="#ff7b72"/><rect x="76" y="334" width="22" height="13" rx="2" fill="#56d364"/><rect x="100" y="334" width="22" height="13" rx="2" fill="#e3b341"/><rect x="124" y="334" width="22" height="13" rx="2" fill="#79c0ff"/><rect x="148" y="334" width="22" height="13" rx="2" fill="#d2a8ff"/><rect x="172" y="334" width="22" height="13" rx="2" fill="#56d4dd"/><rect x="196" y="334" width="22" height="13" rx="2" fill="#f0f6fc"/></g>
+</svg>

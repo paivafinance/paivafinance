@@ -1,0 +1,7 @@
+# Local-only deps for the ASCII art pipeline (not needed by the daily workflow).
+pillow>=11
+# Optional extras for prep_photo.py when converting a real photo
+# (heavy installs; the logo pipeline works with pillow alone):
+# rembg
+# opencv-python
+# numpy
