@@ -12,7 +12,7 @@ The heatmap refreshes daily via .github/workflows/update-profile-art.yml.
 
 <br><br>
 
-<h3><code>thiago@github ~ $ whoami</code></h3>
+<h3><code>thiago@github ~ $ whoami?</code></h3>
 <table>
   <tr>
     <td valign="top"><img src="./ascii-logo.svg" width="370" alt="Integranos logo as ASCII art, typing itself in line by line" /></td>
