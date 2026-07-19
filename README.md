@@ -20,4 +20,6 @@ The heatmap refreshes daily via .github/workflows/update-profile-art.yml.
   </tr>
 </table>
 
+<sub><code>all art generated in-repo · heatmap refreshed daily by GitHub Actions · no external services</code></sub>
+
 </div>
