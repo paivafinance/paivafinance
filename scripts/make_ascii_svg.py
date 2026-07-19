@@ -33,7 +33,8 @@ T0, STAGGER, DUR = 0.3, 0.09, 0.55
 
 
 def to_grid(source: Path, cols: int, invert: bool,
-            crop: tuple[int, int, int, int] | None) -> list[list[tuple[str, str]]]:
+            crop: tuple[int, int, int, int] | None,
+            gamma: float, floor: int) -> list[list[tuple[str, str]]]:
     img = Image.open(source).convert("RGBA")
     if crop:
         img = img.crop(crop)
@@ -49,12 +50,12 @@ def to_grid(source: Path, cols: int, invert: bool,
         for i in range(cols):
             g = gray.getpixel((i, j))
             if invert:
-                # light-on-dark source: bright -> dense, dark bg (JPEG noise floor) -> blank;
-                # gamma 0.5 pulls flat mid-tones (brand green ~149) into dense glyphs
-                if g < 48:
+                # light-on-dark source: bright -> dense, below the floor (dark bg + JPEG
+                # noise) -> blank; gamma < 1 pulls mid-tones into denser glyphs
+                if g < floor:
                     ch = " "
                 else:
-                    idx = round(((g - 48) / 207) ** 0.5 * (len(RAMP) - 1))
+                    idx = round(((g - floor) / (255 - floor)) ** gamma * (len(RAMP) - 1))
                     ch = RAMP[min(len(RAMP) - 1, idx)]
             else:
                 ch = RAMP[(255 - g) * len(RAMP) // 256]
@@ -93,11 +94,15 @@ def main() -> None:
                         help="bright pixels -> dense glyphs (for light-on-dark sources like the logo)")
     parser.add_argument("--crop", type=str, default=None, metavar="L,T,R,B",
                         help="crop the source before converting (e.g. isolate the monogram)")
+    parser.add_argument("--gamma", type=float, default=0.5,
+                        help="invert-mode tone curve: 0.5 for flat logos, ~0.85 for photos")
+    parser.add_argument("--floor", type=int, default=48,
+                        help="invert-mode: gray levels below this become blank background")
     args = parser.parse_args()
     static = os.environ.get("STATIC") == "1"
     crop = tuple(int(v) for v in args.crop.split(",")) if args.crop else None
 
-    grid = to_grid(args.source, args.cols, args.invert, crop)
+    grid = to_grid(args.source, args.cols, args.invert, crop, args.gamma, args.floor)
     width = round(PAD * 2 + args.cols * CW)
     height = PAD * 2 + len(grid) * LH
 
