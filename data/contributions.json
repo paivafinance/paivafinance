@@ -1,14 +1,14 @@
 {
   "username": "paivafinance",
-  "fetched_on": "2026-08-24",
-  "total": 2656,
+  "fetched_on": "2026-08-25",
+  "total": 2783,
   "best_day": {
     "date": "2026-06-03",
     "count": 124,
     "level": 4
   },
-  "current_streak": 71,
-  "longest_streak": 71,
+  "current_streak": 72,
+  "longest_streak": 72,
   "monthly": {
     "2025-08": 0,
     "2025-09": 0,
@@ -22,7 +22,7 @@
     "2026-05": 286,
     "2026-06": 551,
     "2026-07": 988,
-    "2026-08": 345
+    "2026-08": 472
   },
   "days": [
     {
@@ -1827,12 +1827,12 @@
     },
     {
       "date": "2026-08-19",
-      "count": 40,
+      "count": 41,
       "level": 2
     },
     {
       "date": "2026-08-20",
-      "count": 27,
+      "count": 38,
       "level": 2
     },
     {
@@ -1847,11 +1847,16 @@
     },
     {
       "date": "2026-08-23",
-      "count": 20,
-      "level": 1
+      "count": 39,
+      "level": 2
     },
     {
       "date": "2026-08-24",
+      "count": 96,
+      "level": 4
+    },
+    {
+      "date": "2026-08-25",
       "count": 0,
       "level": 0
     }
